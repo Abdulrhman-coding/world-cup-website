@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Watch FIFA World Cup 2026 matches in a premium atmosphere. Book your table at Saudi Arabia's most exclusive match-night destination." />
-  <meta name="keywords" content="FIFA World Cup 2026, Saudi Arabia, cafe, restaurant, lounge, match night, live screening, premium dining, reservation" />
-  <meta property="og:title" content="MAQHAA — Your World Cup Destination in Saudi Arabia" />
-  <meta property="og:description" content="Premium live match screenings, signature drinks, and unforgettable vibes. Reserve your table now." />
+  <meta name="description" content="شاهد مباريات كأس العالم FIFA 2026 في أجواء فاخرة. احجز طاولتك في أرقى وجهة لليالي المباريات في المملكة العربية السعودية." />
+  <meta name="keywords" content="كأس العالم 2026, السعودية, كافيه, مطعم, لاونج, ليلة المباراة, بث مباشر, حجز طاولة" />
+  <meta property="og:title" content="مقهى — وجهتك لكأس العالم 2026" />
+  <meta property="og:description" content="بث مباشر على شاشات عملاقة، مشروبات مميزة، وأجواء لا تُنسى. احجز طاولتك الآن." />
   <meta property="og:type" content="website" />
-  <title>MAQHAA — World Cup 2026 Experience</title>
+  <title>مقهى — تجربة كأس العالم 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,18 +21,17 @@
     <div class="nav-container">
       <div class="nav-logo">
         <span class="logo-icon">⬡</span>
-        <span class="logo-text">MAQHAA</span>
-        <span class="logo-ar">مقهى</span>
+        <span class="logo-text">مقهى</span>
       </div>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#offers">Offers</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#experience">التجربة</a></li>
+        <li><a href="#menu">القائمة</a></li>
+        <li><a href="#offers">العروض</a></li>
+        <li><a href="#gallery">الصور</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
       </ul>
-      <a href="#booking" class="nav-cta">Reserve Now</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <a href="#booking" class="nav-cta">احجز الآن</a>
+      <button class="nav-toggle" id="navToggle" aria-label="القائمة">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -40,53 +39,100 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
+    <!-- Football Field SVG Background -->
     <div class="hero-bg">
+      <div class="field-wrap">
+        <svg class="field-svg" viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <!-- Field base -->
+          <rect width="900" height="560" fill="#0a3d1f"/>
+          <!-- Alternating grass stripes -->
+          <rect x="0" y="0" width="90" height="560" fill="#0b4222" opacity="0.6"/>
+          <rect x="180" y="0" width="90" height="560" fill="#0b4222" opacity="0.6"/>
+          <rect x="360" y="0" width="90" height="560" fill="#0b4222" opacity="0.6"/>
+          <rect x="540" y="0" width="90" height="560" fill="#0b4222" opacity="0.6"/>
+          <rect x="720" y="0" width="90" height="560" fill="#0b4222" opacity="0.6"/>
+          <!-- Outer boundary -->
+          <rect x="40" y="30" width="820" height="500" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.5"/>
+          <!-- Center line -->
+          <line x1="450" y1="30" x2="450" y2="530" stroke="rgba(255,255,255,0.55)" stroke-width="2.5"/>
+          <!-- Center circle -->
+          <circle cx="450" cy="280" r="80" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.5"/>
+          <!-- Center spot -->
+          <circle cx="450" cy="280" r="4" fill="rgba(255,255,255,0.7)"/>
+          <!-- Left penalty area -->
+          <rect x="40" y="155" width="120" height="250" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.5"/>
+          <!-- Left goal area -->
+          <rect x="40" y="210" width="55" height="140" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+          <!-- Left goal -->
+          <rect x="18" y="237" width="22" height="86" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2"/>
+          <!-- Left penalty spot -->
+          <circle cx="128" cy="280" r="3" fill="rgba(255,255,255,0.7)"/>
+          <!-- Left penalty arc -->
+          <path d="M160,230 A70,70 0 0,1 160,330" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.5"/>
+          <!-- Right penalty area -->
+          <rect x="740" y="155" width="120" height="250" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.5"/>
+          <!-- Right goal area -->
+          <rect x="805" y="210" width="55" height="140" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+          <!-- Right goal -->
+          <rect x="860" y="237" width="22" height="86" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2"/>
+          <!-- Right penalty spot -->
+          <circle cx="772" cy="280" r="3" fill="rgba(255,255,255,0.7)"/>
+          <!-- Right penalty arc -->
+          <path d="M740,230 A70,70 0 0,0 740,330" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.5"/>
+          <!-- Corner arcs -->
+          <path d="M40,50 A15,15 0 0,1 55,30" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+          <path d="M845,30 A15,15 0 0,1 860,50" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+          <path d="M40,510 A15,15 0 0,0 55,530" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+          <path d="M845,530 A15,15 0 0,0 860,510" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+        </svg>
+      </div>
+      <!-- Overlay gradient -->
+      <div class="hero-overlay"></div>
+      <!-- Glow effects -->
       <div class="glow glow-1"></div>
       <div class="glow glow-2"></div>
-      <div class="glow glow-3"></div>
-      <div class="lines-container">
-        <div class="motion-line"></div>
-        <div class="motion-line"></div>
-        <div class="motion-line"></div>
-        <div class="motion-line"></div>
-        <div class="motion-line"></div>
-      </div>
+      <!-- Stadium lights -->
+      <div class="stadium-light sl-1"></div>
+      <div class="stadium-light sl-2"></div>
+      <div class="stadium-light sl-3"></div>
+      <div class="stadium-light sl-4"></div>
+      <!-- Particles -->
       <div class="particles" id="particles"></div>
     </div>
+
     <div class="hero-content">
-      <div class="hero-badge fade-in">⚽ FIFA World Cup 2026 · June – July</div>
+      <div class="hero-badge fade-in">⚽ FIFA كأس العالم 2026 · يونيو – يوليو</div>
       <h1 class="hero-title fade-in">
-        Watch the World's Biggest
-        <em>Matches</em> in a Premium Atmosphere
+        شاهد أكبر مباريات العالم
+        <em>في أجواء لا مثيل لها</em>
       </h1>
       <p class="hero-subtitle fade-in">
-        Live screenings on giant screens · Signature drinks &amp; gourmet bites
-        <br />Exclusive lounge seating · Unforgettable match-night vibes
+        بث مباشر على شاشات عملاقة · مشروبات مميزة وأكل راقي
+        <br />جلسات فاخرة · أجواء ليالي المباريات التي لا تُنسى
       </p>
-      <p class="hero-subtitle-ar fade-in">تجربة لا تُنسى · أجواء حصرية · ليالي كأس العالم</p>
       <div class="hero-ctas fade-in">
-        <a href="#booking" class="btn btn-primary">Book a Table</a>
-        <a href="#offers" class="btn btn-outline">View Match Nights</a>
+        <a href="#booking" class="btn btn-primary">احجز طاولتك</a>
+        <a href="#offers" class="btn btn-outline">شوف ليالي المباريات</a>
       </div>
       <div class="hero-stats fade-in">
         <div class="stat">
           <span class="stat-num">64</span>
-          <span class="stat-label">Match Nights</span>
+          <span class="stat-label">ليلة مباراة</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
           <span class="stat-num">4K</span>
-          <span class="stat-label">Giant Screens</span>
+          <span class="stat-label">شاشات عملاقة</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
           <span class="stat-num">VIP</span>
-          <span class="stat-label">Seating Available</span>
+          <span class="stat-label">جلسات متاحة</span>
         </div>
       </div>
     </div>
     <div class="hero-scroll-hint">
-      <span>Scroll</span>
+      <span>اسحب للأسفل</span>
       <div class="scroll-line"></div>
     </div>
   </section>
@@ -94,29 +140,29 @@
   <!-- MATCH EXPERIENCE -->
   <section class="experience" id="experience">
     <div class="container">
-      <div class="section-label reveal">The Experience</div>
-      <h2 class="section-title reveal">Your Ideal Destination for<br /><em>World Cup Nights</em></h2>
-      <p class="section-desc reveal">Every match becomes a memory here. From the moment you arrive, you're immersed in a curated atmosphere designed for true football passion — with the elegance you deserve.</p>
+      <div class="section-label reveal">التجربة</div>
+      <h2 class="section-title reveal">وجهتك المثالية<br /><em>لليالي كأس العالم</em></h2>
+      <p class="section-desc reveal">كل مباراة تصير ذكرى هنا. من اللحظة اللي تدخل فيها، تحس بأجواء مصممة لعشاق كرة القدم الحقيقيين — مع الرقي اللي تستاهله.</p>
       <div class="experience-grid">
         <div class="exp-card reveal">
           <div class="exp-icon">◈</div>
-          <h3>Giant 4K Screens</h3>
-          <p>Crystal-clear live screenings on multiple oversized displays positioned for perfect sightlines from every seat in the venue.</p>
+          <h3>شاشات 4K عملاقة</h3>
+          <p>بث مباشر عالي الجودة على شاشات كبيرة موزعة بشكل مدروس، تضمن لك رؤية مثالية من أي مكان في المكان.</p>
         </div>
         <div class="exp-card reveal">
           <div class="exp-icon">◈</div>
-          <h3>Premium Seating</h3>
-          <p>Curated seating arrangements — from intimate couples tables to premium group booths — all designed for maximum comfort and energy.</p>
+          <h3>جلسات فاخرة</h3>
+          <p>تشكيلة متنوعة من الجلسات — من الطاولات المريحة للأزواج إلى البوثات الكبيرة للمجموعات — مصممة للراحة والمتعة.</p>
         </div>
         <div class="exp-card reveal">
           <div class="exp-icon">◈</div>
-          <h3>Stylish Ambiance</h3>
-          <p>A refined atmosphere that blends match-night excitement with luxury hospitality. No crowded sports bars — just premium lounge energy.</p>
+          <h3>أجواء راقية</h3>
+          <p>جو فريد يجمع بين إثارة ليالي المباريات وفخامة الضيافة الراقية. مو مجرد مكان عادي — تجربة كاملة بكل تفاصيلها.</p>
         </div>
         <div class="exp-card reveal">
           <div class="exp-icon">◈</div>
-          <h3>Group-Friendly Setup</h3>
-          <p>Spacious configurations for groups of 4 to 20+. Private sections available for corporate events and exclusive gatherings.</p>
+          <h3>مناسب للمجموعات</h3>
+          <p>ترتيبات مرنة للمجموعات من ٤ إلى أكثر من ٢٠. أقسام خاصة متاحة للفعاليات والتجمعات المميزة.</p>
         </div>
       </div>
     </div>
@@ -127,31 +173,31 @@
     <div class="container">
       <div class="why-inner">
         <div class="why-text">
-          <div class="section-label reveal">Why MAQHAA</div>
-          <h2 class="section-title reveal">Every Detail Crafted for<br /><em>Your Best Night</em></h2>
-          <p class="reveal">We've designed the ultimate World Cup experience for Saudi Arabia's most discerning guests. Every seat, screen, and service element has been elevated for 2026.</p>
+          <div class="section-label reveal">ليش مقهى؟</div>
+          <h2 class="section-title reveal">كل تفصيلة مصممة<br /><em>لأحلى ليلة عندك</em></h2>
+          <p class="reveal">صممنا أفضل تجربة لكأس العالم لضيوفنا الكرام في المملكة. كل كرسي وشاشة وخدمة اتطورت عشان تجربتك تكون استثنائية في 2026.</p>
           <ul class="why-list">
-            <li class="reveal"><span class="check">✦</span> <strong>White-glove service</strong> — dedicated staff for every table</li>
-            <li class="reveal"><span class="check">✦</span> <strong>Signature menu</strong> — crafted exclusively for match nights</li>
-            <li class="reveal"><span class="check">✦</span> <strong>Zero wait policy</strong> — pre-reserved seating guaranteed</li>
-            <li class="reveal"><span class="check">✦</span> <strong>Live commentary</strong> — Arabic &amp; English audio options</li>
-            <li class="reveal"><span class="check">✦</span> <strong>Easy WhatsApp booking</strong> — reserve in under 60 seconds</li>
-            <li class="reveal"><span class="check">✦</span> <strong>Group &amp; VIP packages</strong> — tailored for every occasion</li>
+            <li class="reveal"><span class="check">✦</span> <strong>خدمة على أعلى مستوى</strong> — موظف مخصص لكل طاولة</li>
+            <li class="reveal"><span class="check">✦</span> <strong>قائمة مميزة</strong> — مصممة خصيصاً لليالي المباريات</li>
+            <li class="reveal"><span class="check">✦</span> <strong>ما تنتظر ولا دقيقة</strong> — مقعدك محجوز ومضمون لك</li>
+            <li class="reveal"><span class="check">✦</span> <strong>تعليق حي</strong> — خيار عربي وإنجليزي</li>
+            <li class="reveal"><span class="check">✦</span> <strong>حجز سهل عبر واتساب</strong> — تحجز في أقل من دقيقة</li>
+            <li class="reveal"><span class="check">✦</span> <strong>باقات للمجموعات و VIP</strong> — لكل مناسبة</li>
           </ul>
         </div>
         <div class="why-visual reveal">
           <div class="visual-card">
-            <div class="vc-badge">Premium</div>
-            <div class="vc-title">Match Night<br />Experience</div>
+            <div class="vc-badge">فاخر</div>
+            <div class="vc-title">تجربة<br />ليلة المباراة</div>
             <div class="vc-line"></div>
             <div class="vc-features">
-              <div class="vcf"><span>⬡</span> Live 4K Screens</div>
-              <div class="vcf"><span>⬡</span> Signature Drinks</div>
-              <div class="vcf"><span>⬡</span> Premium Seating</div>
-              <div class="vcf"><span>⬡</span> Group Packages</div>
-              <div class="vcf"><span>⬡</span> VIP Sections</div>
+              <div class="vcf"><span>⬡</span> شاشات 4K عملاقة</div>
+              <div class="vcf"><span>⬡</span> مشروبات مميزة</div>
+              <div class="vcf"><span>⬡</span> جلسات فاخرة</div>
+              <div class="vcf"><span>⬡</span> باقات للمجموعات</div>
+              <div class="vcf"><span>⬡</span> أقسام VIP</div>
             </div>
-            <div class="vc-cta"><a href="#booking">Reserve Your Seat →</a></div>
+            <div class="vc-cta"><a href="#booking">احجز مقعدك ←</a></div>
           </div>
         </div>
       </div>
@@ -161,124 +207,88 @@
   <!-- FOOD & DRINKS -->
   <section class="menu-section" id="menu">
     <div class="container">
-      <div class="section-label reveal">Signature Menu</div>
-      <h2 class="section-title reveal">Crafted for<br /><em>Match Nights</em></h2>
-      <p class="section-desc reveal">Every item on our menu has been curated to elevate your match-night experience — from the first sip to the final bite.</p>
+      <div class="section-label reveal">القائمة المميزة</div>
+      <h2 class="section-title reveal">مصممة خصيصاً<br /><em>لليالي المباريات</em></h2>
+      <p class="section-desc reveal">كل عنصر في قائمتنا اتختار بعناية عشان يرفع تجربتك — من أول رشفة لآخر لقمة.</p>
       <div class="menu-tabs reveal">
-        <button class="tab active" data-tab="drinks">Drinks</button>
-        <button class="tab" data-tab="bites">Bites</button>
-        <button class="tab" data-tab="desserts">Desserts</button>
+        <button class="tab active" data-tab="drinks">المشروبات</button>
+        <button class="tab" data-tab="bites">الأكل</button>
+        <button class="tab" data-tab="desserts">الحلويات</button>
       </div>
       <div class="menu-grid" id="menuGrid">
         <!-- Drinks -->
         <div class="menu-card" data-category="drinks">
-          <div class="menu-card-img drinks-1">
-            <div class="menu-card-overlay">
-              <span class="menu-tag">Signature</span>
-            </div>
-          </div>
+          <div class="menu-card-img drinks-1"><div class="menu-card-overlay"><span class="menu-tag">مميز</span></div></div>
           <div class="menu-card-body">
-            <h4>Golden Hour Latte</h4>
-            <p>Premium espresso with saffron-infused milk, topped with edible gold dust</p>
-            <div class="menu-price">SAR 32</div>
+            <h4>لاتيه الذهب</h4>
+            <p>إسبريسو فاخر مع حليب الزعفران السعودي، مزيّن بورق الذهب الصالح للأكل</p>
+            <div class="menu-price">٣٢ ريال</div>
           </div>
         </div>
         <div class="menu-card" data-category="drinks">
-          <div class="menu-card-img drinks-2">
-            <div class="menu-card-overlay">
-              <span class="menu-tag">Champion's Pick</span>
-            </div>
-          </div>
+          <div class="menu-card-img drinks-2"><div class="menu-card-overlay"><span class="menu-tag">اختيار البطل</span></div></div>
           <div class="menu-card-body">
-            <h4>Victory Mocktail</h4>
-            <p>Hibiscus, passion fruit, sparkling water with a champagne-style pour</p>
-            <div class="menu-price">SAR 28</div>
+            <h4>موكتيل النصر</h4>
+            <p>كركدية وباشن فروت مع مياه فوارة، يُقدَّم بطريقة الشامبانيا الفاخرة</p>
+            <div class="menu-price">٢٨ ريال</div>
           </div>
         </div>
         <div class="menu-card" data-category="drinks">
-          <div class="menu-card-img drinks-3">
-            <div class="menu-card-overlay">
-              <span class="menu-tag">World Cup Special</span>
-            </div>
-          </div>
+          <div class="menu-card-img drinks-3"><div class="menu-card-overlay"><span class="menu-tag">خاص كأس العالم</span></div></div>
           <div class="menu-card-body">
-            <h4>Midnight Espresso</h4>
-            <p>Double-shot cold brew over marble ice, with dark chocolate drizzle</p>
-            <div class="menu-price">SAR 25</div>
+            <h4>إسبريسو منتصف الليل</h4>
+            <p>كولد برو مزدوج على ثلج رخامي مع شوكولاتة داكنة فاخرة</p>
+            <div class="menu-price">٢٥ ريال</div>
           </div>
         </div>
         <!-- Bites -->
         <div class="menu-card" data-category="bites" style="display:none">
-          <div class="menu-card-img bites-1">
-            <div class="menu-card-overlay">
-              <span class="menu-tag">Fan Favorite</span>
-            </div>
-          </div>
+          <div class="menu-card-img bites-1"><div class="menu-card-overlay"><span class="menu-tag">الأكثر طلباً</span></div></div>
           <div class="menu-card-body">
-            <h4>Wagyu Slider Trio</h4>
-            <p>Three premium wagyu sliders with truffle aioli on brioche buns</p>
-            <div class="menu-price">SAR 65</div>
+            <h4>سلايدر واغيو ثلاثي</h4>
+            <p>ثلاث سلايدرات واغيو فاخرة مع صوص الترافل على خبز البريوش</p>
+            <div class="menu-price">٦٥ ريال</div>
           </div>
         </div>
         <div class="menu-card" data-category="bites" style="display:none">
-          <div class="menu-card-img bites-2">
-            <div class="menu-card-overlay">
-              <span class="menu-tag">Group Share</span>
-            </div>
-          </div>
+          <div class="menu-card-img bites-2"><div class="menu-card-overlay"><span class="menu-tag">للمجموعات</span></div></div>
           <div class="menu-card-body">
-            <h4>Mezze Royale Platter</h4>
-            <p>Artisan selection of premium dips, smoked meats, and fresh bread</p>
-            <div class="menu-price">SAR 120</div>
+            <h4>مزة رويال</h4>
+            <p>تشكيلة راقية من المقبلات السعودية الفاخرة، اللحوم المدخنة، والخبز الطازج</p>
+            <div class="menu-price">١٢٠ ريال</div>
           </div>
         </div>
         <div class="menu-card" data-category="bites" style="display:none">
-          <div class="menu-card-img bites-3">
-            <div class="menu-card-overlay">
-              <span class="menu-tag">Halftime Pick</span>
-            </div>
-          </div>
+          <div class="menu-card-img bites-3"><div class="menu-card-overlay"><span class="menu-tag">وقت الاستراحة</span></div></div>
           <div class="menu-card-body">
-            <h4>Truffle Fries</h4>
-            <p>Crispy golden fries, black truffle oil, parmesan snow, fresh herbs</p>
-            <div class="menu-price">SAR 38</div>
+            <h4>فرايز الترافل</h4>
+            <p>بطاطس مقرمشة بزيت الترافل الأسود وبارميزان وأعشاب طازجة</p>
+            <div class="menu-price">٣٨ ريال</div>
           </div>
         </div>
         <!-- Desserts -->
         <div class="menu-card" data-category="desserts" style="display:none">
-          <div class="menu-card-img desserts-1">
-            <div class="menu-card-overlay">
-              <span class="menu-tag">House Special</span>
-            </div>
-          </div>
+          <div class="menu-card-img desserts-1"><div class="menu-card-overlay"><span class="menu-tag">خاص المطبخ</span></div></div>
           <div class="menu-card-body">
-            <h4>Umm Ali Royale</h4>
-            <p>Traditional Umm Ali reimagined with pistachio cream and gold leaf</p>
-            <div class="menu-price">SAR 45</div>
+            <h4>أم علي رويال</h4>
+            <p>أم علي التراثية معاد ابتكارها بكريمة الفستق وورق الذهب الصالح للأكل</p>
+            <div class="menu-price">٤٥ ريال</div>
           </div>
         </div>
         <div class="menu-card" data-category="desserts" style="display:none">
-          <div class="menu-card-img desserts-2">
-            <div class="menu-card-overlay">
-              <span class="menu-tag">Crowd Pleaser</span>
-            </div>
-          </div>
+          <div class="menu-card-img desserts-2"><div class="menu-card-overlay"><span class="menu-tag">الأكثر شعبية</span></div></div>
           <div class="menu-card-body">
-            <h4>Saffron Panna Cotta</h4>
-            <p>Silky panna cotta with Saudi saffron, rosewater syrup, crushed pistachio</p>
-            <div class="menu-price">SAR 42</div>
+            <h4>بانا كوتا الزعفران</h4>
+            <p>بانا كوتا ناعمة بالزعفران السعودي وشراب ماء الورد والفستق المطحون</p>
+            <div class="menu-price">٤٢ ريال</div>
           </div>
         </div>
         <div class="menu-card" data-category="desserts" style="display:none">
-          <div class="menu-card-img desserts-3">
-            <div class="menu-card-overlay">
-              <span class="menu-tag">World Cup Edition</span>
-            </div>
-          </div>
+          <div class="menu-card-img desserts-3"><div class="menu-card-overlay"><span class="menu-tag">إصدار كأس العالم</span></div></div>
           <div class="menu-card-body">
-            <h4>Champion's Cheesecake</h4>
-            <p>Baked cheesecake with date caramel, cardamom crust, edible gold flakes</p>
-            <div class="menu-price">SAR 48</div>
+            <h4>تشيز كيك البطل</h4>
+            <p>تشيز كيك مخبوزة بكراميل التمر وقاعدة الهيل وورق الذهب</p>
+            <div class="menu-price">٤٨ ريال</div>
           </div>
         </div>
       </div>
@@ -290,60 +300,60 @@
     <div class="container">
       <div class="booking-inner">
         <div class="booking-text">
-          <div class="section-label reveal" style="color:#C9A84C">Reserve Your Seat</div>
-          <h2 class="section-title reveal" style="color:#fff">Seats Fill Up Fast.<br /><em>Don't Miss Your Match Night.</em></h2>
-          <p class="reveal" style="color:rgba(255,255,255,0.75)">Limited premium seating available for each match night. Reservations open now for all 64 World Cup matches. Secure your table before it's gone.</p>
+          <div class="section-label reveal" style="color:#C9A84C">احجز مقعدك</div>
+          <h2 class="section-title reveal" style="color:#fff">الطاولات تمتلئ بسرعة.<br /><em>ما تفوّت ليلة المباراة.</em></h2>
+          <p class="reveal" style="color:rgba(255,255,255,0.75)">أماكن محدودة لكل ليلة مباراة. الحجز مفتوح الآن لجميع مباريات كأس العالم الـ٦٤. ضمّن طاولتك قبل ما تنتهي.</p>
           <div class="urgency-bar reveal">
             <span class="urgency-dot"></span>
-            <span>Only <strong>12 tables</strong> left for tonight's match — <strong>reserve now</strong></span>
+            <span>باقي <strong>١٢ طاولة</strong> لمباراة الليلة — <strong>احجز الآن</strong></span>
           </div>
           <div class="booking-actions reveal">
-            <a href="https://wa.me/966500000000?text=I'd+like+to+reserve+a+table+for+a+World+Cup+match+night" class="btn btn-wa" target="_blank">
+            <a href="https://wa.me/966500000000?text=أبي أحجز طاولة لليلة المباراة" class="btn btn-wa" target="_blank">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-              Book via WhatsApp
+              احجز عبر واتساب
             </a>
             <a href="tel:+966500000000" class="btn btn-phone">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              Call to Reserve
+              اتصل للحجز
             </a>
           </div>
         </div>
         <div class="booking-form-wrap reveal">
           <form class="booking-form" id="bookingForm">
-            <h3>Quick Reservation</h3>
-            <p class="form-note">Fill in your details and we'll confirm within minutes</p>
+            <h3>حجز سريع</h3>
+            <p class="form-note">عبّي بياناتك ونأكد الحجز خلال دقائق</p>
             <div class="form-group">
-              <label>Your Name <span class="ar">/ اسمك</span></label>
-              <input type="text" placeholder="Enter your full name" required />
+              <label>الاسم الكريم</label>
+              <input type="text" placeholder="أدخل اسمك الكامل" required />
             </div>
             <div class="form-group">
-              <label>Phone / WhatsApp</label>
-              <input type="tel" placeholder="+966 5XX XXX XXXX" required />
+              <label>الجوال / واتساب</label>
+              <input type="tel" placeholder="05XX XXX XXXX" required />
             </div>
             <div class="form-group">
-              <label>Match Date</label>
+              <label>تاريخ المباراة</label>
               <input type="date" required />
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label>Guests</label>
+                <label>عدد الأشخاص</label>
                 <select>
-                  <option>2 people</option>
-                  <option>4 people</option>
-                  <option>6 people</option>
-                  <option>8+ people</option>
+                  <option>شخصين</option>
+                  <option>٤ أشخاص</option>
+                  <option>٦ أشخاص</option>
+                  <option>٨+ أشخاص</option>
                 </select>
               </div>
               <div class="form-group">
-                <label>Seating</label>
+                <label>نوع الجلسة</label>
                 <select>
-                  <option>Standard</option>
-                  <option>Premium</option>
-                  <option>VIP Booth</option>
+                  <option>عادية</option>
+                  <option>مميزة</option>
+                  <option>VIP</option>
                 </select>
               </div>
             </div>
-            <button type="submit" class="btn btn-form-submit">Confirm Reservation</button>
+            <button type="submit" class="btn btn-form-submit">تأكيد الحجز</button>
           </form>
         </div>
       </div>
@@ -353,52 +363,52 @@
   <!-- MATCH-NIGHT OFFERS -->
   <section class="offers" id="offers">
     <div class="container">
-      <div class="section-label reveal">Exclusive Offers</div>
-      <h2 class="section-title reveal">Match-Night<br /><em>Packages &amp; Deals</em></h2>
-      <p class="section-desc reveal">Curated packages designed for every type of World Cup guest — from intimate date nights to large group celebrations.</p>
+      <div class="section-label reveal">عروض حصرية</div>
+      <h2 class="section-title reveal">باقات وعروض<br /><em>لليالي المباريات</em></h2>
+      <p class="section-desc reveal">باقات مصممة لكل نوع من ضيوفنا — من سهرة رومانسية إلى احتفالية جماعية كبيرة.</p>
       <div class="offers-grid">
         <div class="offer-card reveal">
-          <div class="offer-badge">Most Popular</div>
+          <div class="offer-badge">الأكثر طلباً</div>
           <div class="offer-icon">◈</div>
-          <h3>Group Package</h3>
-          <div class="offer-for">For 4–8 guests</div>
+          <h3>باقة المجموعة</h3>
+          <div class="offer-for">من ٤ إلى ٨ أشخاص</div>
           <ul class="offer-list">
-            <li>Premium table for the full match</li>
-            <li>Welcome drinks round for the group</li>
-            <li>Sharing bites platter (2 items)</li>
-            <li>Reserved screen-front seating</li>
+            <li>طاولة مميزة لكامل المباراة</li>
+            <li>جولة مشروبات ترحيبية للمجموعة</li>
+            <li>طبق مشتركات (صنفين)</li>
+            <li>جلسة أمام الشاشة مباشرة</li>
           </ul>
-          <div class="offer-price">From <strong>SAR 320</strong> <span>/group</span></div>
-          <a href="#booking" class="btn btn-offer">Reserve This Package</a>
+          <div class="offer-price">من <strong>٣٢٠ ريال</strong> <span>/للمجموعة</span></div>
+          <a href="#booking" class="btn btn-offer">احجز هالباقة</a>
         </div>
         <div class="offer-card reveal featured">
-          <div class="offer-badge gold">VIP Experience</div>
+          <div class="offer-badge gold">تجربة VIP</div>
           <div class="offer-icon gold">◈</div>
-          <h3>VIP Match Night</h3>
-          <div class="offer-for">For 2–4 guests</div>
+          <h3>ليلة VIP</h3>
+          <div class="offer-for">من شخصين إلى ٤</div>
           <ul class="offer-list">
-            <li>Exclusive VIP booth reservation</li>
-            <li>Personalized welcome gift</li>
-            <li>Full à la carte menu access</li>
-            <li>Dedicated waiter service</li>
-            <li>Post-match dessert surprise</li>
+            <li>بوث VIP حصري</li>
+            <li>هدية ترحيبية شخصية</li>
+            <li>قائمة طعام كاملة</li>
+            <li>نادل مخصص لطاولتك</li>
+            <li>مفاجأة حلوى بعد المباراة</li>
           </ul>
-          <div class="offer-price">From <strong>SAR 480</strong> <span>/table</span></div>
-          <a href="#booking" class="btn btn-offer-gold">Reserve VIP Table</a>
+          <div class="offer-price">من <strong>٤٨٠ ريال</strong> <span>/للطاولة</span></div>
+          <a href="#booking" class="btn btn-offer-gold">احجز طاولة VIP</a>
         </div>
         <div class="offer-card reveal">
-          <div class="offer-badge">Great Value</div>
+          <div class="offer-badge">قيمة ممتازة</div>
           <div class="offer-icon">◈</div>
-          <h3>Duo Combo</h3>
-          <div class="offer-for">For 2 guests</div>
+          <h3>باقة الثنائي</h3>
+          <div class="offer-for">لشخصين</div>
           <ul class="offer-list">
-            <li>Two signature drinks</li>
-            <li>One sharing bites plate</li>
-            <li>Premium seating</li>
-            <li>Match-night atmosphere</li>
+            <li>مشروبان مميزان</li>
+            <li>طبق مشتركات</li>
+            <li>جلسة مميزة</li>
+            <li>أجواء ليلة المباراة</li>
           </ul>
-          <div class="offer-price">From <strong>SAR 180</strong> <span>/couple</span></div>
-          <a href="#booking" class="btn btn-offer">Reserve This Package</a>
+          <div class="offer-price">من <strong>١٨٠ ريال</strong> <span>/للثنائي</span></div>
+          <a href="#booking" class="btn btn-offer">احجز هالباقة</a>
         </div>
       </div>
     </div>
@@ -407,69 +417,54 @@
   <!-- GALLERY -->
   <section class="gallery" id="gallery">
     <div class="container">
-      <div class="section-label reveal">The Venue</div>
-      <h2 class="section-title reveal">A Glimpse of<br /><em>Your Night Out</em></h2>
+      <div class="section-label reveal">المكان</div>
+      <h2 class="section-title reveal">لمحة من<br /><em>ليلتك معنا</em></h2>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item large reveal">
-        <div class="gallery-img g1"></div>
-        <div class="gallery-caption">The Main Hall</div>
-      </div>
-      <div class="gallery-item reveal">
-        <div class="gallery-img g2"></div>
-        <div class="gallery-caption">VIP Booths</div>
-      </div>
-      <div class="gallery-item reveal">
-        <div class="gallery-img g3"></div>
-        <div class="gallery-caption">Signature Drinks</div>
-      </div>
-      <div class="gallery-item reveal">
-        <div class="gallery-img g4"></div>
-        <div class="gallery-caption">Match Screening</div>
-      </div>
-      <div class="gallery-item reveal">
-        <div class="gallery-img g5"></div>
-        <div class="gallery-caption">Premium Seating</div>
-      </div>
+      <div class="gallery-item large reveal"><div class="gallery-img g1"></div><div class="gallery-caption">القاعة الرئيسية</div></div>
+      <div class="gallery-item reveal"><div class="gallery-img g2"></div><div class="gallery-caption">بوثات VIP</div></div>
+      <div class="gallery-item reveal"><div class="gallery-img g3"></div><div class="gallery-caption">المشروبات المميزة</div></div>
+      <div class="gallery-item reveal"><div class="gallery-img g4"></div><div class="gallery-caption">شاشة المباراة</div></div>
+      <div class="gallery-item reveal"><div class="gallery-img g5"></div><div class="gallery-caption">الجلسات الفاخرة</div></div>
     </div>
   </section>
 
   <!-- TESTIMONIALS -->
   <section class="testimonials" id="testimonials">
     <div class="container">
-      <div class="section-label reveal">Guest Reviews</div>
-      <h2 class="section-title reveal">Words from Our<br /><em>Valued Guests</em></h2>
+      <div class="section-label reveal">آراء الضيوف</div>
+      <h2 class="section-title reveal">كلام من<br /><em>ضيوفنا الكرام</em></h2>
       <div class="testi-grid">
         <div class="testi-card reveal">
           <div class="testi-stars">★★★★★</div>
-          <p class="testi-text">"The atmosphere was unlike anything I've experienced in Riyadh. Watching the match on those giant screens with premium service — I felt like I was at the stadium itself."</p>
+          <p class="testi-text">"الجو ما شفت زيه في الرياض. مشاهدة المباراة على الشاشات الضخمة مع الخدمة الراقية — حسّيت إني في الملعب نفسه."</p>
           <div class="testi-author">
-            <div class="testi-avatar">F</div>
+            <div class="testi-avatar">ف</div>
             <div>
-              <div class="testi-name">Faisal Al-Otaibi</div>
-              <div class="testi-role">Group visit · 8 guests</div>
+              <div class="testi-name">فيصل العتيبي</div>
+              <div class="testi-role">زيارة جماعية · ٨ أشخاص</div>
             </div>
           </div>
         </div>
         <div class="testi-card reveal">
           <div class="testi-stars">★★★★★</div>
-          <p class="testi-text">"We booked the VIP booth for the finals night. The food was exceptional, the drinks were creative, and the staff made us feel like royalty. Already booked for the next match."</p>
+          <p class="testi-text">"حجزنا بوث VIP لليلة النهائي. الأكل كان استثنائي، المشروبات مبدعة، والموظفين خدمونا كأننا ملوك. حجزنا مرة ثانية لمباراة الجمعة."</p>
           <div class="testi-author">
-            <div class="testi-avatar">N</div>
+            <div class="testi-avatar">ن</div>
             <div>
-              <div class="testi-name">Noura Al-Rashidi</div>
-              <div class="testi-role">VIP Booth · Couple</div>
+              <div class="testi-name">نورة الرشيدي</div>
+              <div class="testi-role">بوث VIP · ثنائي</div>
             </div>
           </div>
         </div>
         <div class="testi-card reveal">
           <div class="testi-stars">★★★★★</div>
-          <p class="testi-text">"Booked via WhatsApp in under a minute. Arrived to find our table perfectly set up. The Golden Hour Latte alone was worth the visit — absolute perfection."</p>
+          <p class="testi-text">"حجزت عبر واتساب في أقل من دقيقة. وصلت ولقيت الطاولة جاهزة تماماً. لاتيه الذهب وحده يستاهل الزيارة — شيء آخر!"</p>
           <div class="testi-author">
-            <div class="testi-avatar">S</div>
+            <div class="testi-avatar">س</div>
             <div>
-              <div class="testi-name">Sultan Al-Ghamdi</div>
-              <div class="testi-role">Standard table · 4 guests</div>
+              <div class="testi-name">سلطان الغامدي</div>
+              <div class="testi-role">طاولة عادية · ٤ أشخاص</div>
             </div>
           </div>
         </div>
@@ -480,40 +475,40 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="section-label reveal">Find Us</div>
-      <h2 class="section-title reveal">We're Ready for<br /><em>Your Visit</em></h2>
+      <div class="section-label reveal">تواصل معنا</div>
+      <h2 class="section-title reveal">نحن جاهزون<br /><em>لاستقبالك</em></h2>
       <div class="contact-grid">
         <div class="contact-card reveal">
           <div class="contact-icon">◈</div>
-          <h4>Location</h4>
-          <p>King Fahd Road, Al Olaya District<br />Riyadh, Saudi Arabia 12213</p>
+          <h4>الموقع</h4>
+          <p>طريق الملك فهد، حي العليا<br />الرياض، المملكة العربية السعودية</p>
         </div>
         <div class="contact-card reveal">
           <div class="contact-icon">◈</div>
-          <h4>Opening Hours</h4>
-          <p>Daily: 3:00 PM – 2:00 AM<br />Match nights: Open until final whistle</p>
+          <h4>ساعات العمل</h4>
+          <p>يومياً: ٣:٠٠ م – ٢:٠٠ ص<br />ليالي المباريات: مفتوح حتى الصافرة الأخيرة</p>
         </div>
         <div class="contact-card reveal">
           <div class="contact-icon">◈</div>
-          <h4>Reservations</h4>
-          <p>WhatsApp: +966 50 000 0000<br />Phone: +966 11 000 0000</p>
+          <h4>الحجوزات</h4>
+          <p>واتساب: ‎+966 50 000 0000<br />هاتف: ‎+966 11 000 0000</p>
         </div>
         <div class="contact-card reveal">
           <div class="contact-icon">◈</div>
-          <h4>Follow Us</h4>
+          <h4>تابعنا</h4>
           <div class="social-links">
-            <a href="#" class="social-link">Instagram</a>
-            <a href="#" class="social-link">TikTok</a>
-            <a href="#" class="social-link">Snapchat</a>
+            <a href="#" class="social-link">إنستقرام</a>
+            <a href="#" class="social-link">تيك توك</a>
+            <a href="#" class="social-link">سناب شات</a>
           </div>
         </div>
       </div>
       <div class="contact-ctas reveal">
         <a href="https://wa.me/966500000000" class="btn btn-wa" target="_blank">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          WhatsApp Us Now
+          راسلنا على واتساب
         </a>
-        <a href="tel:+966500000000" class="btn btn-outline-dark">Call Us</a>
+        <a href="tel:+966500000000" class="btn btn-outline-dark">اتصل بنا</a>
       </div>
     </div>
   </section>
@@ -525,46 +520,45 @@
         <div class="footer-brand">
           <div class="footer-logo">
             <span class="logo-icon">⬡</span>
-            <span>MAQHAA</span>
-            <span class="logo-ar">مقهى</span>
+            <span>مقهى</span>
           </div>
-          <p>Saudi Arabia's premium destination for World Cup 2026 match nights. Elegant atmosphere, signature food &amp; drinks, and unforgettable experiences.</p>
-          <div class="footer-wc-badge">⚽ FIFA World Cup 2026 Official Viewing Season</div>
+          <p>أرقى وجهة في المملكة العربية السعودية لمشاهدة مباريات كأس العالم 2026. أجواء فاخرة، أكل ومشروبات مميزة، وذكريات لا تُنسى.</p>
+          <div class="footer-wc-badge">⚽ موسم مشاهدة كأس العالم FIFA 2026</div>
         </div>
         <div class="footer-links">
-          <h5>Quick Links</h5>
-          <a href="#experience">Experience</a>
-          <a href="#menu">Menu</a>
-          <a href="#offers">Offers</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#booking">Reserve</a>
+          <h5>روابط سريعة</h5>
+          <a href="#experience">التجربة</a>
+          <a href="#menu">القائمة</a>
+          <a href="#offers">العروض</a>
+          <a href="#gallery">الصور</a>
+          <a href="#booking">احجز</a>
         </div>
         <div class="footer-links">
-          <h5>Contact</h5>
-          <a href="tel:+966500000000">+966 50 000 0000</a>
-          <a href="https://wa.me/966500000000">WhatsApp</a>
-          <a href="#">Instagram</a>
-          <a href="#">TikTok</a>
+          <h5>تواصل</h5>
+          <a href="tel:+966500000000">‎+966 50 000 0000</a>
+          <a href="https://wa.me/966500000000">واتساب</a>
+          <a href="#">إنستقرام</a>
+          <a href="#">تيك توك</a>
         </div>
         <div class="footer-links">
-          <h5>Hours</h5>
-          <span>Daily 3 PM – 2 AM</span>
-          <span>Match nights: Open late</span>
-          <span>Reservations open now</span>
+          <h5>ساعات العمل</h5>
+          <span>يومياً ٣ م – ٢ ص</span>
+          <span>ليالي المباريات: مفتوح لآخر اللحظة</span>
+          <span>الحجز متاح الآن</span>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 MAQHAA. All rights reserved.</span>
-        <span>Riyadh, Saudi Arabia 🇸🇦</span>
+        <span>© 2026 مقهى. جميع الحقوق محفوظة.</span>
+        <span>الرياض، المملكة العربية السعودية 🇸🇦</span>
       </div>
     </div>
   </footer>
 
   <!-- STICKY MOBILE BOOKING BUTTON -->
   <div class="sticky-booking" id="stickyBooking">
-    <a href="https://wa.me/966500000000?text=Book+a+table" class="sticky-wa" target="_blank">
+    <a href="https://wa.me/966500000000?text=أبي أحجز طاولة" class="sticky-wa" target="_blank">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-      Book a Table
+      احجز طاولة
     </a>
   </div>
 
